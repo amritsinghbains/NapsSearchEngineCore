@@ -30,9 +30,7 @@ public class Main {
         }, new FreeMarkerEngine());
 
     get("/didyoumean", (req, res) -> {
-      Map<String, Object> attributes = new HashMap<>();
-      attributes.put("message", "Hello World!asdasdasd");
-      return new ModelAndView(attributes, "index.ftl");
+      return "lol";
     }, new FreeMarkerEngine());
 
     get("/db", (req, res) -> {
