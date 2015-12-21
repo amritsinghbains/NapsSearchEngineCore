@@ -46,7 +46,7 @@ public class HelloServlet extends HttpServlet {
 		List<String> matchedWords = new ArrayList<String>();
 		List<String> matchedWordsToShow = new ArrayList<String>();
 
-		File dictionary = new File("Dictionary.txt");
+		File dictionary = new File("NapsSearchEngineCore2/src/main/java/servlet/Dictionary.txt");
 		boolean isExist = dictionary.exists();
 		String line = "";
 		StringTokenizer stringTokenizer = null;
