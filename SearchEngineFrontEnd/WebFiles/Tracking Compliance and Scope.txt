@@ -1,0 +1,45 @@
+Tracking Compliance and Scope
+
+
+
+
+
+
+Tracking Compliance and Scope
+
+
+
+W3C Working Draft 08 May 2014
+
+
+This version:
+        http://www.w3.org/TR/2014/WD-tracking-compliance-20140508/
+Latest published version:
+        http://www.w3.org/TR/tracking-compliance/
+Latest editor's draft:
+        http://www.w3.org/2011/tracking-protection/drafts/tracking-compliance.html
+Previous version:
+        http://www.w3.org/TR/2014/WD-tracking-compliance-20140128/
+Editors:
+        Heather West, Google
+        Justin Brookman, CDT (until September 2013)
+        Sean Harvey, Google (until June 2012)
+        Erica Newland, CDT (until May 2012)
+
+Copyright © 2014 W3C® (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+This specification defines the meaning of a Do Not Track (DNT) preference and sets out practices for websites to comply with this preference.
+
+
+Status of This Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the technical reports index at http://www.w3.org/TR/.

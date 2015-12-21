@@ -1,0 +1,57 @@
+Web Services Policy 1.5 - Framework
+
+
+
+
+
+
+Web Services Policy 1.5 - Framework
+
+
+
+W3C Recommendation 04 September 2007
+
+
+This version:
+        http://www.w3.org/TR/2007/REC-ws-policy-20070904
+Latest version:
+        http://www.w3.org/TR/ws-policy
+Previous version:
+        http://www.w3.org/TR/2007/PR-ws-policy-20070706/
+Editors:
+        Asir S Vedamuthu, Microsoft Corporation
+        David Orchard, BEA Systems, Inc.
+        Frederick Hirsch, Nokia
+        Maryann Hondo, IBM Corporation
+        Prasad Yendluri, webMethods (A subsidiary of Software AG)
+        Toufic Boubez, Layer 7 Technologies
+        Ümit Yalçinalp, SAP AG.
+
+Please refer to the errata for this document, which may include some normative corrections.
+
+See also translations.
+
+This document is also available in these non-normative formats: PDF, PostScript, XML, and plain text.
+
+Copyright © 2007 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+The Web Services Policy 1.5 - Framework provides a general purpose model and corresponding syntax to describe the policies of entities in a Web services-based system.
+
+Web Services Policy Framework defines a base set of constructs that can be used and extended by other Web services specifications to describe a broad range of service requirements and capabilities.
+
+
+
+
+Status of this Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.

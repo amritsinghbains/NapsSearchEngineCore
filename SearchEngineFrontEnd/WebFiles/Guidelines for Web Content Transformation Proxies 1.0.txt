@@ -1,0 +1,56 @@
+Guidelines for Web Content Transformation Proxies 1.0
+
+
+
+
+
+
+Guidelines for Web Content Transformation Proxies 1.0
+
+
+
+W3C Working Group Note 26 October 2010
+
+
+This version:
+        http://www.w3.org/TR/2010/NOTE-ct-guidelines-20101026/
+Latest version:
+        http://www.w3.org/TR/ct-guidelines/
+Previous version:
+        http://www.w3.org/TR/2010/CR-ct-guidelines-20100617/
+Editor:
+        Jo Rabin, Invited Expert (and before at mTLD Top Level Domain, dotMobi)
+
+Copyright © 2010 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+This document provides guidance to Content Transformation proxies as to whether and how to transform Web content.
+
+Content Transformation proxies alter requests sent by user agents to servers and responses returned by servers so that the appearance, structure or control flow of Web applications are modified.
+Content Transformation proxies are mostly used to convert Web sites designed for desktop computers to a form suitable for mobile devices.
+
+Based on current practice and standards, this document specifies mechanisms with which Content Transformation proxies should make their presence known to other parties, present the outcome of
+alterations performed on HTTP traffic, and react to indications set by clients or servers to constrain these alterations.
+
+The objective is to reduce undesirable effects on Web applications, especially mobile-ready ones, and to limit the diversity in the modes of operation of Content Transformation proxies, while at the
+same time allowing proxies to alter content that would otherwise not display successfully on mobile devices.
+
+Important considerations regarding the impact on security are highlighted.
+
+
+
+
+Status of this Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.
+
+This document was developed by the Mobile Web Best Practices Working Group as part of the Mobile Web Initiative.

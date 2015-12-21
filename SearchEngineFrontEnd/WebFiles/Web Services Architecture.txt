@@ -1,0 +1,62 @@
+Web Services Architecture
+
+
+
+
+
+
+Web Services Architecture
+
+
+
+W3C Working Group Note 11 February 2004
+
+
+This version:
+        http://www.w3.org/TR/2004/NOTE-ws-arch-20040211/
+Latest version:
+        http://www.w3.org/TR/ws-arch/
+Previous version:
+        http://www.w3.org/TR/2003/WD-ws-arch-20030808/
+Editors:
+        David Booth, W3C Fellow / Hewlett-Packard
+        Hugo Haas, W3C
+        Francis McCabe, Fujitsu Labs of America
+        Eric Newcomer (until October 2003), Iona
+        Michael Champion (until March 2003), Software AG
+        Chris Ferris (until March 2003), IBM
+        David Orchard (until March 2003), BEA Systems
+
+This document is also available in these non-normative formats: PostScript version and PDF version.
+
+Copyright © 2004 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark, document use and software licensing rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+This document defines the Web Services Architecture. It identifies the functional components and defines the relationships among those components to effect the desired properties of the overall
+architecture.
+
+
+
+
+Status of this Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.
+
+This is a public Working Group Note produced by the W3C Web Services Architecture Working Group, which is part of the W3C Web Services Activity. This publication as a Working Group Note coincides
+with the end of the Working Group's charter period, and represents the culmination of the group's work.
+
+Discussion of this document is invited on the public mailing list www-ws-arch@w3.org (public archives). A list of remaining open issues is included in 4 Conclusions.
+
+Patent disclosures relevant to this specification may be found on the Working Group's patent disclosure page.
+
+Publication as a Working Group Note does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is
+inappropriate to cite this document as other than work in progress. Other documents may supersede this document.

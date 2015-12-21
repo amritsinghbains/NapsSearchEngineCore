@@ -1,0 +1,45 @@
+LBase: Semantics for Languages of the Semantic Web
+
+
+
+
+LBase: Semantics for Languages of the Semantic Web
+
+
+
+W3C Working Group Note 10 October 2003
+
+
+This version:
+        http://www.w3.org/TR/2003/NOTE-lbase-20031010/
+Latest version:
+        http://www.w3.org/TR/lbase
+Previous version:
+        http://www.w3.org/TR/2003/NOTE-lbase-20030905
+Authors:
+        R.V.Guha, IBM, < rguha@us.ibm.com>
+        Patrick Hayes, IHMC < phayes@ihmc.us>
+
+Copyright © 2003 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark, document use and software licensing rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+Abstract
+
+
+This document presents a framework for specifying the semantics for the languages of the Semantic Web. Some of these languages (notably RDF [RDF-PRIMER] [RDF-VOCABULARY] [RDF-SYNTAX] [RDF-CONCEPTS]
+[RDF-SEMANTICS], and OWL [OWL]) are currently in various stages of development and we expect others to be developed in the future. This framework is intended to provide a framework for specifying
+the semantics of all of these languages in a uniform and coherent way. The strategy is to translate the various languages into a common 'base' language thereby providing them with a single coherent
+model theory.
+
+We describe a mechanism for providing a precise semantics for the Semantic Web Languages (referred to as SWELs from now on. The purpose of this is to define clearly the consequences and allowed
+inferences from constructs in these languages.
+
+
+Status of This Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.

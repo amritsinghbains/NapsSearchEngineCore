@@ -1,0 +1,54 @@
+Composite Capabilities/Preference Profiles: Terminology and Abbreviations
+
+
+
+
+Composite Capabilities/Preference Profiles: Terminology and Abbreviations
+
+
+
+W3C Working Draft 21 July 2000
+
+
+This version:
+        http://www.w3.org/TR/2000/WD-CCPP-ta-20000721/
+Latest version:
+        http://www.w3.org/TR/CCPP-ta/
+Editors:
+        Mikael Nilsson, mikael.nilsson@ks.ericsson.se, Ericsson
+
+Copyright © 2000 W3C ® (MIT, INRIA, Keio), All Rights Reserved. W3C liability, trademark, document use and software licensing rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+Abstract
+
+
+This document contains terminology and abbreviations that are used in other CC/PP documents. For a detailed description of CC/PP, please see [CC/PP].
+
+
+
+
+Status of this document
+
+
+This document is a working draft made available by the World Wide Web Consortium (W3C) for discussion only. This indicates no endorsement of its content. This is the first public working draft, and
+work in progress, representing the current consensus of the working group, and future updates and changes are likely.
+
+The working group is part of the W3C Mobile Access activity. Continued status of the work is reported on the CC/PP Working Group Home Page (Member-only link).
+
+It incorporates suggestions resulting from reviews and active participation by members of the IETF CONNEG working group and the WAP Forum UAprof drafting committee.
+
+Please send comments and feedback to www-mobile@w3.org.
+
+A list of current W3C Recommendations and other technical documents can be found at http://www.w3.org/TR/.
+
+
+Table of Contents
+
+
+1. Terminology
+2. Abbreviations
+3. References

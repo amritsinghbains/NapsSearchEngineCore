@@ -1,0 +1,56 @@
+Best practices for creating MMI Modality Components
+
+
+
+
+
+
+Best practices for creating MMI Modality Components
+
+
+
+W3C Working Group Note 1 March 2011
+
+
+This version:
+        http://www.w3.org/TR/2011/NOTE-mmi-mcbp-20110301/
+Latest version:
+        http://www.w3.org/TR/mmi-mcbp/
+Previous version:
+        This is the first version.
+Editor:
+        Ingmar Kliche , Deutsche Telekom AG
+Authors:
+        Deborah Dahl, Invited Expert
+        James A. Larson, Invited Expert
+        B. Helena Rodriguez, Telecom ParisTech
+        Muthuselvam Selvaraj, until 2009 while at HP
+
+Copyright ©  2011 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+This document describes Modality Components in the MMI Architecture which are responsible for controlling the various input and output modalities on various devices by providing guidelines and
+suggestions for designing Modality Components. Also this document shows several possible examples of Modality Components, (1) face identification, (2) form-filling using handwriting recognition and
+(3) video display.
+
+
+
+
+Status of this Document
+
+
+This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this
+technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.
+
+This is the 1 March 2011 W3C Working Group Note of "Best practices for creating MMI Modality Components". The Multimodal Interaction Working Group once published a Working Draft of the "Multimodal
+Architecture and Interfaces (MMI Architecture)" on 16 October 2008 with this content. However, the Working Group concluded that the description on how to create Modality Components and examples of
+possible Modality Components should be published as a Working Group Note rather than part of the MMI Architecture specification. The goal of this Working Group Note is to provide guidelines and
+suggestions for designing Modality Components in the MMI Architecture and make it easier to author concrete Modality Components for multimodal Web applications. Also this document shows several
+possible examples of Modality Components, (1) face identification, (2) form-filling using handwriting recognition and (3) video display.

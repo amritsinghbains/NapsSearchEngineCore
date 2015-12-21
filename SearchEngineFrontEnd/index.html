@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Naps Search Engine</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/speech-input.css">
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Naps Search Engine</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a id="napsMainListen" href="#">Naps</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Naps</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <script>
+
+function toggle_visibility(id, view) {
+       var e = document.getElementById(id);
+       if(view == 'hide')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+
+function show_more_menu(value) {
+  var x = document.getElementById("first_name2");
+  x.value = value;
+  myFunction();
+}
+function myFunction() {
+    var x = document.getElementById("first_name2");
+    
+    var n = x.value.split(" ");
+    var lastWord = n[n.length - 1];
+    var wordMinusLast = x.value.substring(0, x.value.length - lastWord.length - 1);
+
+    if(x.value == 0){
+      toggle_visibility('loadingMask', 'hide');
+      toggle_visibility('metaInfo', 'hide');
+      $("#didyoumean").empty();
+      $("#metaInfo").empty();
+      $("#listOfPeople").empty();
+
+      return 1;
+    }else{
+      toggle_visibility('loadingMask', 'show');
+    }
+    
+    $.ajax({url: "https://napssearchengine.herokuapp.com/didyoumean?q=" + lastWord, success: function(result){
+        console.log(result);
+        var mainResult = result.substring(1, result.length-1).split(",");
+        toggle_visibility('loadingMask', 'hide');
+        $("#didyoumean").empty();
+        for(var i=0; i<mainResult.length; i++){
+          // console.log(result[i])
+          var value = mainResult[i].substring(1, mainResult[i].length-1);
+          if(value.length > 0)
+          {
+            $("#didyoumean").append('<div class="chip" onclick="chipButtonClick(this);">' + 
+                wordMinusLast + value + '</div>');
+          }
+        }
+    }});
+
+    console.log(x.value.length)
+    console.log(x.value.trim().length)
+    $.ajax({url: "https://napssearchengine.herokuapp.com/search?q=" + x.value.trim(), success: function(result){
+        var result = JSON.parse(result);
+        console.log(result[0].name);
+        console.log(result[0].value);
+        console.log(result[1].name);
+        console.log(result[1].value);
+        
+        $("#metaInfo").empty();
+        toggle_visibility('metaInfo', 'hide');
+        if(result[0].value != '0'){
+          toggle_visibility('metaInfo', 'show');
+          $("#metaInfo").append("About " + result[0].value + " results (" + result[1].value + " ms)");
+        }
+        toggle_visibility('loadingMask', 'hide');
+        $("#listOfPeople").empty();
+        for(var i=2; i<result.length; i++){
+          // console.log(result[i])
+          var value = result[i].name;
+          var value2 = result[i].value;
+          if(value.length > 0)
+          {
+            $("#listOfPeople").append('<li class="collection-item avatar"> <i class="material-icons circle green">insert_chart</i><span class="title">' + 
+              '<a target="_blank" href="openfile.php?link=WebFiles/' + value + 
+              '&words=' + x.value.replace(/ /g,",") + '"">'+
+              value + '</a></span><p style="text-align:left;">' + value2 + ' hits</p></li>');
+          }
+        }
+    }});
+
+    // x.value = x.value.toUpperCase();
+}
+
+function chipButtonClick(ele){
+    console.log(ele.innerHTML);
+    var x = document.getElementById("first_name2");
+    x.value = ele.innerHTML;
+    myFunction();
+}
+
+</script>
+
+  <div class="container">
+    <div class="section">
+
+     <div class="row">
+        <div class="input-field col s12">
+
+
+
+
+        <div class="si-wrapper" style="width:95%">
+          <input id="first_name2" type="text" class="validate si-input"  onkeyup="myFunction()">
+            <button class="si-btn">
+              speech input
+              <span class="si-mic"></span>
+              <span class="si-holder"></span>
+            </button>
+          </div>
+<br/><br/>
+
+
+
+          <label class="active" for="first_name2">Search</label>
+
+          <div id="didyoumean" style="float:left">
+            <div class="chip" onclick="chipButtonClick(this);">
+              Did you mean
+            </div>
+          </div>
+
+          <div id="metaInfo" style="margin: 6px 0 0 0;float:right">
+            Results and Time
+          </div>
+        </div>
+      </div>
+
+      <center>
+      <div class="preloader-wrapper big active s12" id="loadingMask" style="display: none;" >
+          <div class="spinner-layer spinner-green-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        </center>
+      <ul class="collection" id="listOfPeople">
+        <li class="collection-item avatar">
+        
+        <i class="material-icons circle">perm_identity</i>
+          <span class="title">File Name</span> 
+          <p style="text-align:left;">
+            Occurances
+          </p>
+        </li>
+      </ul>
+
+      
+
+    </div>
+  </div>
+
+
+ 
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/speech-input.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+The ILU Requestor for HTTP servers
+
+
+
+WD-ilu-requestor-960307
+
+The ILU Requester:
+Object Services in HTTP Servers
+
+
+
+W3C Informational Draft 07-Mar-96
+
+
+This version:
+        http://www.w3.org/pub/WWW/TR/WD-ilu-requestor-960307
+Latest version:
+        http://www.w3.org/pub/WWW/TR/WD-ilu-requestor
+Authors:
+        Paul Everitt, Digital Creations <paul@digicool.com>
+
+
+========================================================================================================================================================================================================
+
+
+
+Status of this document
+
+
+This document provides information for the W3C members and other interested community. This document does not specify a W3C standard of any kind.
+
+Feedback should be directed to the author.
+
+A list of current W3C documents can be found at: http://www.w3.org/pub/WWW/TR
+
+
+========================================================================================================================================================================================================
+
+
+
+
+
+Abstract
+
+
+The Common Gateway Interface (CGI) is not scaling to meet the requirements of today's dynamic, interactive webs. For this reason, multiple vendors have proposed C callable APIs. These APIs allow
+authors to alleviate the performance penalty of CGI, and allow tighter integration of add-in modules. Unfortunately, this comes at the price of complexity and portability.
+
+This document describes a new model for extending WWW servers. First, HTTP is captured using an interface specification, which eliminates the ambiguities of interpretating a standards-track
+document. This interface is then implemented atop a particular httpd's API. Finally, all of this is done using a standard distributed object model called ILU.
+
+Digital Creations' work on our ILU Requester reflects this design and shows its advantages. This paper describes the ILU Requester.

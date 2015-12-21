@@ -1,0 +1,49 @@
+Web MIDI API
+
+
+
+
+
+
+Web MIDI API
+
+
+
+W3C Working Draft 26 November 2013
+
+
+This version:
+        http://www.w3.org/TR/2013/WD-webmidi-20131126/
+Latest published version:
+        http://www.w3.org/TR/webmidi/
+Previous version:
+        http://www.w3.org/TR/2012/WD-webmidi-20121213/
+Latest editor's draft:
+        http://webaudio.github.io/web-audio-api/
+Editors:
+        Jussi Kalliokoski
+        Chris Wilson, Google
+Versioning Repository:
+        https://github.com/WebAudio/web-midi-api/
+Issues tracker:
+        https://github.com/WebAudio/web-midi-api/issues?state=open
+Test suite:
+        https://github.com/jussi-kalliokoski/web-midi-test-suite (unofficial)
+Working Group:
+        Audio Working Group
+Comments:
+        public-audio@w3.org (archives)
+
+Copyright © 2012-2013 W3C® (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+========================================================================================================================================================================================================
+
+
+
+Abstract
+
+
+Some user agents have music devices, such as synthesizers, keyboard and other controllers, and drum machines connected to their host computer or device. The widely adopted Musical Instrument Digital
+Interface (MIDI) protocol enables electronic musical instruments, controllers and computers to communicate and synchronize with each other. MIDI does not transmit audio signals: instead, it sends
+event messages about musical notes, controller signals for parameters such as volume, vibrato and panning, cues and clock signals to set the tempo, and system-specific MIDI communications (e.g. to
+remotely store synthesizer-specific patch data). This same protocol has become a standard for non-musical uses, such as show control, lighting and special effects control.
