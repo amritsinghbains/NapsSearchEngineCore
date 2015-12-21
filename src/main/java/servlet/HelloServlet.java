@@ -38,6 +38,8 @@ public class HelloServlet extends HttpServlet {
     	EditDistance ed = new EditDistance();
 		List<String> matched = ed.findingLeastEditDistance(req.getParameter("q"));
 		
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		
         ServletOutputStream out = resp.getOutputStream();
         out.write(gson.toJson(matched).getBytes());
         out.flush();
