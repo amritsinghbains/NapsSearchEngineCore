@@ -1,38 +1,24 @@
-# java-getting-started
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+# Create a Java Web Application using Embedded Tomcat
 
-A barebones Java app, which can easily be deployed to Heroku.  
+This tutorial will show you how to create a simple Java web application using embedded Tomcat.
 
-This application support the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
+## Prerequisites
 
-## Running Locally
+* Basic Java knowledge, including an installed version of the JVM and Maven.
+* Basic Git knowledge, including an installed version of Git.
+* A Java web application. If you don't have one follow the first step to create an example. Otherwise skip that step.
 
-Make sure you have Java and Maven installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+## Skip The Application Creation
 
-```sh
-$ git clone https://github.com/heroku/java-getting-started.git
-$ cd java-getting-started
-$ mvn install
-$ foreman start web
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-If you're going to use a database, ensure you have a local `.env` file that reads something like this:
+If you want to skip the creation steps you can clone the finished sample and then skip to the 'Deploy Your Application to Heroku' section:
 
 ```
-DATABASE_URL=postgres://localhost:5432/java_database_name
+$ git clone git@github.com:heroku/devcenter-embedded-tomcat.git
 ```
 
-## Deploying to Heroku
+## Follow the Guide
 
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+If you would like to create the application yourself, then follow the Dev Center guide on how to [Create a Java Web Application using Embedded Tomcat](https://devcenter.heroku.com/articles/create-a-java-web-application-using-embedded-tomcat).
 
-## Documentation
 
-For more information about using Java on Heroku, see these Dev Center articles:
-
-- [Java on Heroku](https://devcenter.heroku.com/categories/java)
