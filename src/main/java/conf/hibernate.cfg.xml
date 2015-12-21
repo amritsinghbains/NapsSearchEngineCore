@@ -26,7 +26,7 @@
            <property name="hibernate.current_session_context_class">thread</property>
  			
         <mapping class="servlet/WebFile" />
-        <mapping class="src/main/java/servlet/InvertedIndex" />
-        <mapping class="src/main/java/servlet/WordPosition" />
+        <mapping class="servlet/InvertedIndex" />
+        <mapping class="servlet/WordPosition" />
     </session-factory>
 </hibernate-configuration>
