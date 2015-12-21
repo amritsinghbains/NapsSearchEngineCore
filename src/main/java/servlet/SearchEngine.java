@@ -251,37 +251,37 @@ public class SearchEngine extends HttpServlet {
 		Scanner scanIn = new Scanner(System.in);
 		aKeyword = scanIn.nextLine();
 
-		EditDistance ed = new EditDistance();
-		System.out.println();
-		matchedWords = ed.findingLeastEditDistance(aKeyword);
+//		EditDistance ed = new EditDistance();
+//		System.out.println();
+//		matchedWords = ed.findingLeastEditDistance(aKeyword);
+//
+//		
+//		boolean correctWord = false;
+//		
+//		
+//		if (!matchedWords.isEmpty()) {
+////			System.out.println("Did you mean?\n");
+//			
+//			selectedWord = scanIn.nextLine();
+//			
+//			for (String mWord : matchedWords) {
+//				if (selectedWord.equals(mWord)) {
+//					correctWord = true;
+//					// System.out.println("Typed Word was not in the match list. Please try again later.\n");
+//					// System.exit(0);
+//				}
+//			}
+//			if (!correctWord) {
+//				System.out
+//						.println("Typed Word was not in the match list. Please try again later.\n");
+//				System.exit(0);
+//			}
+//		}else{ 
+//			System.out.println("Exact Match");
+//			selectedWord = aKeyword;
+//		}
 
-		
-		boolean correctWord = false;
-		
-		
-		if (!matchedWords.isEmpty()) {
-//			System.out.println("Did you mean?\n");
-			
-			selectedWord = scanIn.nextLine();
-			
-			for (String mWord : matchedWords) {
-				if (selectedWord.equals(mWord)) {
-					correctWord = true;
-					// System.out.println("Typed Word was not in the match list. Please try again later.\n");
-					// System.exit(0);
-				}
-			}
-			if (!correctWord) {
-				System.out
-						.println("Typed Word was not in the match list. Please try again later.\n");
-				System.exit(0);
-			}
-		}else{ 
-			System.out.println("Exact Match");
-			selectedWord = aKeyword;
-		}
-
-		
+		selectedWord = aKeyword;
 
 		invertedObjects = searchEngine.getInvertedIndex(selectedWord);
 
