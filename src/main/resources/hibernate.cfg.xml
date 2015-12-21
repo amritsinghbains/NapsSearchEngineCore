@@ -14,13 +14,13 @@
 
            <!-- Assume test is the database name -->
            <property name="hibernate.connection.url">
-              jdbc:mysql://mysql.freehostingnoads.net:3306/u587060921_zinda
+              jdbc:mysql://sql5.freemysqlhosting.net:3306/sql5100555
            </property>
            <property name="hibernate.connection.username">
-              u587060921_zinda
+              sql5100555
            </property>
            <property name="hibernate.connection.password">
-              u587060921_zinda
+              rl8IgC5gUD
            </property>
 
            <property name="hibernate.current_session_context_class">thread</property>
