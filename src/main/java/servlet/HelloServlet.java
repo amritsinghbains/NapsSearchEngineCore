@@ -23,9 +23,10 @@ import org.apache.commons.collections.map.MultiValueMap;
 import com.google.gson.Gson;
 
 import servlet.RedBlackBST;
+
 @WebServlet(
         name = "MyServlet", 
-        urlPatterns = {"/didyoumean"}
+        urlPatterns = {"/hello"}
     )
 public class HelloServlet extends HttpServlet {
 
