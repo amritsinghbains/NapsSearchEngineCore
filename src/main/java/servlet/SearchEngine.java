@@ -87,7 +87,7 @@ public class SearchEngine extends HttpServlet {
 //			System.out.println("Exact Match" + matchedWords.get(0).length());
 //			selectedWord = aKeyword;			
 //		}else{ 
-//			System.out.println("Show first result from did you mean");
+//			System.out.prtomcat javaintln("Show first result from did you mean");
 //			selectedWord = matchedWords.get(0);
 //		}
 
