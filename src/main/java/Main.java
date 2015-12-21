@@ -72,7 +72,7 @@ public class Main {
 
     get("/didyoumean", (req, res) -> {
       Map<String, Object> attributes = new HashMap<>();
-      Main ed = new Main();
+      EditDistance ed = new EditDistance();
       attributes.put("message", ed.editDistance("industries", "industriesa"));
       return new ModelAndView(attributes, "json.ftl");
     }, new FreeMarkerEngine());
