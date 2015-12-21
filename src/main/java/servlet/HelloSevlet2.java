@@ -25,9 +25,9 @@ import com.google.gson.Gson;
 import servlet.RedBlackBST;
 @WebServlet(
         name = "MyServlet", 
-        urlPatterns = {"/didyoumean"}
+        urlPatterns = {"/didyoumean2"}
     )
-public class HelloServlet extends HttpServlet {
+public class HelloServlet2 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
