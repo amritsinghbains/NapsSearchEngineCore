@@ -32,7 +32,7 @@ public class Main {
     get("/didyoumean", (req, res) -> {
       Map<String, Object> attributes = new HashMap<>();
       attributes.put("message", "Hello World!asdasdasd");
-      return new ModelAndView(attributes, "error.ftl");
+      return new ModelAndView(attributes, "json.ftl");
     }, new FreeMarkerEngine());
 
     get("/db", (req, res) -> {
