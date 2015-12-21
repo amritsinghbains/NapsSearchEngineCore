@@ -283,7 +283,7 @@ public class SearchEngine extends HttpServlet {
 
 		selectedWord = aKeyword;
 
-		invertedObjects = searchEngine.getInvertedIndex(selectedWord);
+		invertedObjects = searchEngine.getInvertedIndex("('" + selectedWord + "')" );
 
 		int[] frequecyArray = new int[invertedObjects.size()];
 		int[] sortedFrequency = new int[invertedObjects.size()];
