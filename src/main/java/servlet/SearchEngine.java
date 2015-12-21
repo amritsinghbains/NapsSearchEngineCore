@@ -160,6 +160,9 @@ public class SearchEngine extends HttpServlet {
 			returnValue.value = freqArray.get(index);
 			returnValues.add(returnValue);
 		}
+
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		
 		
 		ServletOutputStream out = resp.getOutputStream();
         out.write(gson.toJson(returnValues).getBytes());
