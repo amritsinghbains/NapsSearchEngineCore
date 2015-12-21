@@ -78,11 +78,11 @@
     <artifactId>javassist</artifactId>
     <version>3.12.1.GA</version>
 </dependency>
-  <dependency>
-    <groupId>org.ebaysf.web</groupId>
+ <dependency>
+    <groupId>com.thetransactioncompany</groupId>
     <artifactId>cors-filter</artifactId>
-    <version>1.0.0</version>
-  </dependency>
+    <version>2.3</version>
+</dependency>
 
 
 
