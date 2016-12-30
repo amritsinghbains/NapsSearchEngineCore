@@ -5,26 +5,30 @@
  
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">
-              org.hibernate.dialect.MySQLDialect
-           </property>
-           <property name="hibernate.connection.driver_class">
-              com.mysql.jdbc.Driver
-           </property>
+    
+                 
 
-           <!-- Assume test is the database name -->
-           <property name="hibernate.connection.url">
-              jdbc:mysql://sql5.freemysqlhosting.net:3306/sql5100555
-           </property>
-           <property name="hibernate.connection.username">
-              sql5100555
-           </property>
-           <property name="hibernate.connection.password">
-              rl8IgC5gUD
-           </property>
 
-           <property name="hibernate.current_session_context_class">thread</property>
- 			
+
+
+
+<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.username">uyrazjbzrltndd</property>
+        <property name="hibernate.connection.password">69d6c0dc7dee05142dbdd5f37399fbf02b4d5845ad2b261579e2a9620f8bdf61</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-107-20-230-243.compute-1.amazonaws.com:5432/dbftcjpk4hgd4q?sslmode=require
+        </property>
+
+
+
+        <property name="connection_pool_size">1</property>
+
+        <property name="hbm2ddl.auto">create</property>
+
+        <property name="show_sql">true</property>
+        
+        <property name="hibernate.current_session_context_class">thread</property>
+        
  		<mapping class="servlet.WebFile" />
         <mapping class="servlet.InvertedIndex" />
         <mapping class="servlet.WordPosition" />

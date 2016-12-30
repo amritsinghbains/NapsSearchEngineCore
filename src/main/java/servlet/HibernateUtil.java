@@ -10,6 +10,7 @@ public class HibernateUtil {
  
     private static SessionFactory buildSessionFactory() {
         try {
+        	Class.forName("org.postgresql.Driver");
             // Create the SessionFactory from hibernate.cfg.xml file:///home/amrit/Documents/playground/RESTfulExample/src/main/resources
             return new AnnotationConfiguration().configure()
                     .buildSessionFactory();
